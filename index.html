@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title> ПрасолА </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div>
+        <h1>Рассчитать стоимость заказа</h1>
+
+        <form>
+            <label>Блюдо: </label>
+            <select name="prodType">
+                <option value="1">Круассан</option>
+                <option value="2">Сет роллов</option>
+                <option value="3">Пицца</option>
+            </select>
+
+            <div id="radios">
+                <label><input type="radio" name="prodOptions" value="option1" checked="checked">Обычный набор</label>
+                <label><input type="radio" name="prodOptions" value="option2" >Большой набор</label>
+            </div>
+
+            <div id="checkboxes">
+                Что добавить?<br>
+
+                <label><input type="checkbox" name="prodM">Соус</label>
+                <label><input type="checkbox" name="prodM2">Доп помидоры</label>
+                <label><input type="checkbox" name="prodM3">Доп ветчина</label>
+            </div>
+
+            <div>Количество:<br></div>
+            <input id="input" type="number" min="0" max="100" step="1" value="0">
+            <br>
+            Оплатить:
+            <button id="button1">OK</button>
+            <div id="prodPrice"></div>
+
+        </form>
+        <script src="script.js"></script>
+</body>
+</html>
